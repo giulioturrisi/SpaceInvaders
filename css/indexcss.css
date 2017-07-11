@@ -1,0 +1,257 @@
+/*div principale della schermata*/
+#game {
+	position:absolute;
+	top:-1%;
+	right: 48%;
+	width:550px;
+	height:550px;
+}
+
+/*div all'interno del quale si svolge il gioco,figlio di #game */
+#game-area {
+	width:120%;
+	height:80%;
+	background-image: url("../images/spazio.png");
+	position: absolute;
+	left: 40%;
+	top: 10%;
+	bottom: 10%;
+	right: 25%;
+	border-color: white;
+	border-style: solid;
+}
+
+/*div contenente informazioni riguardo i punti,la vita e i nemici rimasti. Figlio di #game */
+#game-info {
+	width: 20%;
+	height: 80%;
+	background-image: url("../images/space.jpg");
+	position: absolute;
+	top:10%;
+	left: 15%;
+	color: red;
+	font-weight: bold;
+}
+
+/*form utilizzata per il login iniziale*/
+#form {
+	position:absolute;
+	top:30%;
+	left:38%;
+}
+
+/*relativo ai campi della form*/
+.credential {	
+	margin-top:-10%;
+
+}
+
+/*relativo ai pulsanti di input della form */
+.credential2 {
+	float: left;
+	margin-top: -5%;
+}
+
+.field {
+	margin-bottom: -5%;
+	color: white;
+}
+
+/*div relativo alla vita della navicella. Figlio di #game-info*/
+#game-life {
+	position:absolute;
+	top:20%;
+}
+
+/*div relativo ai punti. Figlio di #game-info*/
+#game-point {
+	position:absolute;
+	top: 40%;
+	
+}
+
+/*div relativo ai nemici rimasti. Figlio di #game-info*/
+#game-enemy {
+	position: absolute;
+	top: 60%;
+	
+}
+
+/*p relativo ai nemici rimasti. Figlio di div*/
+#enemyleft {
+	margin-left:-80%;
+}
+
+
+body {
+	overflow:hidden;
+	background-color: black;	
+}
+
+/*p relativi ai valori dei punti,nemici rimasti,e vita della navicella.*/
+.information {
+	margin-left: 60%;
+	font-size: 80%;
+	
+}
+
+#informationList{
+	margin-left:-3%
+}
+
+/*relativo ai link presenti nella schermata iniziale*/
+.linkgame {
+	position:relative;
+	top:60%;
+	left:10%;
+	font-size: 300%;
+	float:left;
+	margin:1%;
+	width: 20%;
+	text-decoration: none;
+	color:blue;
+	z-index:1;
+
+}
+
+/*relativo al div utilizzato per contenere il Rank e le Informazioni*/
+#indeximage {
+	position:absolute;
+	width:140%;
+	height:140%;
+	left:-25%;
+	top:-10%;
+}
+
+
+#information {
+	border-style:solid;
+	border-width:thin;
+	border-color: white;
+	position:absolute;
+	left:40%;
+	top:10%;
+	width:50%;
+	height:50%;
+}
+
+/*relativo al paragrafo che si crea una volta effettuato il login. Riporta il nome dell'utente collegato*/
+#namecaptain {
+	position:absolute;
+	left: 135%;
+	top: 3%;
+	color: red;
+	float: left;
+}
+
+/*relativo all'avviso di avvio del gioco*/
+#begin {
+	position:absolute;
+	top:45%;
+	left:45%;
+	font-size: 100%;
+	color:red;
+}
+
+/*relativo allo stile dell'immagine della navicella*/
+#ship {
+	width:15%;
+	height:15%;
+	position:absolute;
+	top:40%;
+	left:0%;
+	bottom:0%;
+	right:0%;
+}
+
+/*relativo allo stile dell'immagine dei razzi*/
+.rocket {
+	position:absolute;
+	width:50%;
+	height: 50%;
+}
+
+/*relativo allo stile dell'immagine dei razzi(laterali)*/
+.rocket2 {
+	position:absolute;
+	width:30%;
+	height: 30%;
+}
+
+/*relativo allo stile dei proiettili*/
+.bullet {
+	position:absolute;
+}
+
+/*relativo allo stile delle navicelle nemiche*/
+.enemyship {
+	position:absolute;
+	width:5%;
+	height:9%;
+}
+
+/*relativo al link che permette di ricominciare la partita*/
+#Retry {
+	position:absolute;
+	top:55%;
+	left:38%;
+	font-size: 200%;
+	color:red;
+}
+
+/*stile generale per i link*/
+a:hover {
+	cursor: pointer;
+}
+
+/*relativo allo stile del bonus*/
+#bonus {
+	position:absolute;
+	width:10%;
+	height:10%;
+}
+
+/*relativo alla immagine nella schermata start*/
+#game-image {
+	position: absolute;
+	width:50%;
+	height:50%;
+	left:40%;
+	border-style: solid;
+	border-width: thin;
+}
+
+
+/*relativo alle celle della tabella Rank*/
+td {
+	color:white;
+	width: 15%;
+	padding-left: 10%;
+}
+
+/*utile a non far comparire le immagini nel div preload*/
+div#preload { display: none; }
+
+
+/*relativo a Logout,Back To Home e Save Your Score*/
+.smartLink {
+	position: absolute;
+	color: red;
+	top: 6% ;
+	left: 40%;
+}
+
+/*id del link per il logout */
+#logout {
+	margin-left: 20%;
+}
+
+#SaveScore {
+	position:absolute;
+	top: 92%;
+}
+
+#Register {
+	position:absolute;
+	margin-left: 5%;
+}
